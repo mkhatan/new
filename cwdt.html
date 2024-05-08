@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <link rel="stylesheet" href="cwdt.css">
+
+     </head>
+     <body>
+         <div class="container">
+             <div>
+                 <h1 class="header_text"> Ганч ганч бийв? </h1>
+        </div>
+        <div class="gif container">
+            <img
+            src="https://media1.giphy.com/media/v1.Y21kPTc5MG13NjExcDdtZ2JiZDR0a31vMWF40G8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZ1cD12MV9pbnR1cm5hbf9naWZfYn1faWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="cute animated illustraition">
+            
+        </div>
+        <div class="buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id = "noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <script>
+        function nextPage() {
+           
+                window.location.href = "cwdt2.html";
+        } 
+    
+    function moveButton(){
+        var x =Math.random () * (windoww.innerWidth - document.getElementById('noButton').offsetwidth) - 85;
+        var y =Math.random () * (window.innerHeight-document.getElementById('noButton').offsetHeight) - 48 ;
+        document.getElementById('noButton').style.left ='${x}px';
+        document.getElementById('noButton').style.top = '${y}px';
+    }
+            
+    
+    </script>
+</div>
+</div>
+</body> 
+</html> 
